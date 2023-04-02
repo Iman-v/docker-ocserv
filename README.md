@@ -4,13 +4,7 @@ docker-ocserv is an OpenConnect VPN Server boxed in a Docker image built by [Tom
 
 ## Update on Aug 31, 2017
 
-Update to version 0.11.8 and use Alpine 3.6 as base image
-
-## Update on July 20,2016
-
-You can login with two group (`Route`/`ALL`) from now on.
-`Route` group means you can access China Mainland website directly and other connection will be protected by OpenConnect VPN
-`All` group means all of connection will be protected by OpenConnect VPN 
+Update to version 0.11.8 and use Alpine 3.6 as base image 
 
 ## Update on July 16, 2016
 
@@ -112,7 +106,7 @@ All the users opertaions happened while the container is running. If you used a 
 If say, you want to create a user named `tommy`, type the following command
 
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -g "Route,All" tommy
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd tommy
 Enter password:
 Re-enter password:
 ```
